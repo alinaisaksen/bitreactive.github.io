@@ -1,0 +1,51 @@
+<footer class="section contact">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6 col-xs-12">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Contact information</h2>
+                    <p>Professor Brochs gate 2, 1st floor<br>
+                    NO 7030 TRONDHEIM<br>
+                    NORWAY</p>
+                    
+                    <p>post@bitreactive.com<br>
+                    tel: + 47 957 26 339</p>
+                    
+                    <p>org.no:  NO 997 140 672 MVA</p>
+                                       
+                </div>
+                
+                <div class="col-lg-6 col-xs-12 text-right"><br><br><br><br>
+                Contact us to get started: <a href="#modal" class="touch">Get in touch</a>
+                <br><br><br><br>
+                	<ul class="list-inline">
+                        <li><a href="#home">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">⋅</li>
+                        <li><a href="#about">Technology</a>
+                        </li>
+                        <li class="footer-menu-divider">⋅</li>
+                        <li><a href="#services">Blog</a>
+                        </li>
+                        <li class="footer-menu-divider">⋅</li>
+                        <li><a href="#contact">Login</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="row">
+             <div class="col-lg-12 col-xs-12">
+            	<p class="copyright text-muted small">© Bitreactive AS 2014. Terms of Service</p>
+             </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </footer>

@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700,400italic);
+
+div.reference p {
+color: rgb(78, 68, 60);
+font-family: Bitter;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.4;
+margin: 10px 0px 10px 0px; /* 20px */
+padding: 0px;
+letter-spacing: normal;
+text-rendering: optimizeLegibility;
+text-align: left;
+}
+
+div.reference p.summary {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 20px 0px 20px 0px;
+}
+
+/* HEADERS */
+
+div.reference h1, 
+div.reference h2, 
+div.reference h3, 
+div.reference h4, 
+div.reference h5, 
+div.reference h6 {
+  font-family: "Bitter", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #6A90CB;
+  text-rendering: optimizeLegibility;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  text-align: left;
+  letter-spacing: normal;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+    font-size: 60%;
+    color: #6f6f6f;
+    line-height: 0; }
+
+div.reference h1 {
+  font-size: 2rem; 
+  font-weight:normal;
+  margin-bottom: 2rem;
+}
+
+div.reference h2 {
+  font-weight:normal;
+  font-size: 1.25rem;
+}
+
+div.reference h3, 
+div.reference h4, 
+div.reference h5, 
+div.reference h6 {
+  font-weight:normal;
+  font-size: 1rem; 
+}
+
+
+/* LISTS */ 
+
+div.reference li {
+color: rgb(78, 68, 60);
+font-family: Bitter;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.4;
+letter-spacing: normal;
+text-rendering: optimizeLegibility;
+text-align: left;
+}
+
+/* EXTRAS */
+
+div.hint {
+  border: 1px solid #6A90CB;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+/* TOC... Table of contents */
+
+div.toc {
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+ul.toc {
+	padding: 0px;
+}
+
+ul.toc li {
+  display: inline;
+  float: left;
+  list-style-type: none;
+  padding-left: 12px;
+}
+
+ul.toc li li {
+  float: none;
+  display: list-item;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+ul.toc ol {
+	padding: 0px;
+}
+
+ul.toc ol ol {
+	padding-left: 5px;
+}
