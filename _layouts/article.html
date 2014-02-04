@@ -1,165 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>{{page.title}}</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-    <link href="css/docs.css" rel="stylesheet">
-    
-	<style type="text/css">
-h1, h2, h3, h4, h5, h6 {
-	font-weight:300;
-	color: #00c5db
-}
+    <meta charset="utf-8">
+    <title>{{ site.name }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.description }}">
 
-h1 {
-	line-height: 55px;
-	margin-bottom:40px;
-}
-
-p, body {
-	//font-size:medium;
-}
-
-a {
-color: #00c5db;
-}
-
-ul {
-	list-style-image:url(img/bullet.png)
-}
-
-blockquote {
-	font-style: italic;
-	font-size: x-large;
-	xcolor: #00c5db;
-	border-left: none;
-	line-height: 30px;
-	color:white; background:#00c5db; padding: 20px
-}
-
-.nav-list > .active > a, .nav-list > .active > a:hover {
-background-color: #00c5db;
-}
-
-p {
-	margin-top: 20px;
-}
-
-span.drop { 
-float: left; 
-color: white; 
-background-color: #00c5db; 
-font-size: 28px;
-width: 36px;
-height: 36px; 
-padding: 8px;
-margin: 4px 10px 2px 0px;
-xfont-weight: bold; 
-}
-
-span.section-number { 
-float: right; 
-color: #00c5db; 
-background-color: white; 
-font-size: 28px;
-width: 36px;
-height: 36px; 
-padding: 8px;
-margin: 20px 10px 2px 0px;
-xfont-weight: bold; 
-}
-
-td {
-vertical-align:middle;
-text-align:center;
-}
-
-td.right {
-text-align:right;
-}
-
-span.end {
-	float: right;
-	height: 16px;
-	width:16px;
-	background: #00c5db;
-}
-    </style>
-    
-  </head>
-  <body style="font-family: 'Open Sans', sans-serif; font-weight:300" data-spy="scroll" data-target=".bs-docs-sidebar">
-    
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-
-<div class="navbar xnavbar-inverse navbar-fixed-top" style="-webkit-box-shadow: 0 1px 12px -3px rgba(0, 0, 0, 0.3); background:white">
-      <div class="navbar-innerx">
-      <a class="brand" style="float:left" href="./index.html"><img src="br.png" width="80px"></a>
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          
-          <div class="nav-collapse collapse bs-docs-sidebar">
-            <ul class="nav">
-              	<li><a href="#introduction1">Introduction</a></li>
-          		<li><a href="#introduction2">Principle 1: Divide and Conquer</a></li>
-          		<li><a href="#introduction3">Principle 2: Visualize</a></li>
-          		<li><a href="#introduction4">Principle 3: Analyze</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    
-    
-
-
-
-<div class="container">
-
-      {{ content }}
-
-    </div>
-    
-
-   
-    <script type="text/javascript">
-    $(document).ready(function() {
-$("a").click(function() {
-$("html, body").animate({
-scrollTop: $($(this).attr("href")).offset().top + "px"
-}, {
-duration: 450
-});
-return false;
-});
-});
-
-$('.bs-docs-sidenav').affix({
-      offset: {
-      	// top: function () { return $window.width() <= 980 ? 290 : 210 }
-        top: function () { return 210 }
-      , bottom: 270
+    <link href="http://www.scanpartner.no/bit/2/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px;
       }
-    })
-    </script>
-   
-<!-- Place this tag after the last +1 button tag. -->
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>   
-   
-   
+    </style>
+    <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../css/reference.css" rel="stylesheet">
+
+<link href="http://www.scanpartner.no/bit/2/css/landing-page.css" rel="stylesheet">    
+    
+    {% include comment.ext %}
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></sc\
+ript>
+    <![endif]-->
+  </head>
+
+  <body>
+    
+    {% include menu.ext %}
+    
+    <div class="container reference">
+            <div class="row">
+                <div class="col-lg-2 col-sm-2">
+                </div>
+                <div class="col-lg-7 col-sm-7">
+                    <div class="clearfix"></div>
+                    {{ content }}
+                    
+                    <div class="clearfix" style="height:40px"></div>                    
+                </div>
+                <div class="col-lg-2 col-sm-2">
+                	
+                </div>
+            </div>
+    </div>
+    
+    {% include footer.ext %}
+
   </body>
+  <script src="../js/bootstrap.min.js"></script>
 </html>
