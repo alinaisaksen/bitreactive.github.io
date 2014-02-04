@@ -5,7 +5,7 @@ url: "bitreactive.com"
 
 paginate: 10
 relative_permalinks: false
-permalink: /:title
+permalink: title
 
 markdown: rdiscount
 permalink: pretty
