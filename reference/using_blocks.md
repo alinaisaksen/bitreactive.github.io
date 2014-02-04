@@ -59,7 +59,7 @@ From the context menu of a block instance, you can:
 
 <p>
 
-Executing action <em>"Match with Original Block"�</em> means that the instance is synchronized with its corresponding specification. This action needs to be taken when the original specification is changed.
+Executing action <em>"Match with Original Block"�</em> means that the instance is synchronized with its corresponding specification. This action needs to be taken when the original specification is changed.
 </p>
 
 </div>
@@ -101,7 +101,7 @@ All types of pin can be used with all types of flows. So no matter if a pin is a
 </p>
 
 <p>
-You can move a pin along an edge with the arrow keys → and ←. The orientation of a pin can be changed with key <em>“r”</em> for rotate or from the context menu.
+You can move a pin along an edge with the arrow keys → and ←. The orientation of a pin can be changed with key <em>"r"</em> for rotate or from the context menu.
 </p>
 
 </div>
